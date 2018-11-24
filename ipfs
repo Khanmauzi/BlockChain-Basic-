@@ -1,0 +1,25 @@
+---------------IPFS-----------------
+
+1.steps to install ipfs on your ubuntu
+
+sudo apt-get update
+sudo apt-get install golang-go -y
+wget https://dist.ipfs.io/go-ipfs/v0.4.10/go-ipfs_v0.4.10_linux-386.tar.gz
+tar xvfz go-ipfs_v0.4.10_linux-386.tar.gz
+sudo mv go-ipfs/ipfs /usr/local/bin/ipfs
+
+2. Initializes ipfs
+
+
+a.  ipfs init(to initialize a node)
+b.  ipfs daemon(to run the node)
+c.  ipfs swarm peers (to gather some peers that are going to share the contens)
+
+
+now to add files to ipfs
+
+ipfs add -r folder name
+
+
+-----------------------------
+now publish the hash of root directory to the ipfs (the line generated after ipfs add command)
