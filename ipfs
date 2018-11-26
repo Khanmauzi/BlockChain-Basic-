@@ -23,3 +23,5 @@ ipfs add -r folder name
 
 -----------------------------
 now publish the hash of root directory to the ipfs (the line generated after ipfs add command)
+
+ipfs name publish hashvalue
